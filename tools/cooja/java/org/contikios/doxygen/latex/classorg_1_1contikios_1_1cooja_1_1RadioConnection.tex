@@ -1,0 +1,255 @@
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection}{\section{org.\-contikios.\-cooja.\-Radio\-Connection Class Reference}
+\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection}\index{org.\-contikios.\-cooja.\-Radio\-Connection@{org.\-contikios.\-cooja.\-Radio\-Connection}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_adeb449c52aa586de0b34c14b8c6ead39}{Radio\-Connection} (Radio source\-Radio)
+\item 
+long \hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_ab334a3820d0405a0b2b6aa7683561149}{get\-Start\-Time} ()
+\item 
+long \hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_af2bd3c40fa297d883ccb1d2285b0edd1}{get\-Reception\-Start\-Time} ()
+\item 
+void \hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a7faeaa8de29ad4f8499540d0a38a0c4b}{add\-Destination} (Radio radio)
+\item 
+void \hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a988eb4ce5c7a4fcac7a535134c11d2a8}{remove\-Destination} (Radio radio)
+\item 
+void \hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a83d1396b6ef027e9c795777deff20d11}{add\-Destination} (Radio radio, Long delay)
+\item 
+long \hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_ac2b68a135d0452a53561609d8c5aa943}{get\-Destination\-Delay} (Radio radio)
+\item 
+void \hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_acaff68ac6d8f5dc265c2a51e9a7439bc}{add\-Interfered} (Radio radio)
+\item 
+boolean \hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_aea0b41548059472407b9c33fa62734ea}{is\-Destination} (Radio radio)
+\item 
+boolean \hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a4a0dfb86d28970240ddd53132c24d300}{is\-Interfered} (Radio radio)
+\item 
+Radio \hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_aa360f2c130d032769b2d78c895041c71}{get\-Source} ()
+\item 
+Radio\mbox{[}$\,$\mbox{]} \hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_ad58d2f1f7529dfc6fb5fb573c666875a}{get\-Destinations} ()
+\item 
+Radio\mbox{[}$\,$\mbox{]} \hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_abe5029d3e9dfed7d4d83994bf706c2c9}{get\-All\-Destinations} ()
+\item 
+Radio\mbox{[}$\,$\mbox{]} \hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a51a86f77fa9cea56aa1333c71bd7b20a}{get\-Interfered} ()
+\item 
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a73d8be903af6e728425b3ae5aa1ce308}{Radio\mbox{[}$\,$\mbox{]} {\bfseries get\-Interfered\-Non\-Destinations} ()}\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a73d8be903af6e728425b3ae5aa1ce308}
+
+\item 
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection_adda2c2eb516d11a34c4597e4eea1f17a}{String {\bfseries to\-String} ()}\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection_adda2c2eb516d11a34c4597e4eea1f17a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A radio connection represents a connection between a single source radio and any number of destination and interfered radios.
+
+Note that a destination node may be interfered, and that an interfered radio does not need to be a destination. Interfered radios may be added during the connection lifetime.
+
+Radio medium implementations may differ slightly in how they forward connection data to destination and interfered radios. Typically, however, all destination radios (including those that are interfered) receive the connection data. And the interfered non-\/destination radios do not receive the connection data.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioMedium}{Radio\-Medium} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Fredrik Osterlind 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection_adeb449c52aa586de0b34c14b8c6ead39}{\index{org\-::contikios\-::cooja\-::\-Radio\-Connection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}!Radio\-Connection@{Radio\-Connection}}
+\index{Radio\-Connection@{Radio\-Connection}!org::contikios::cooja::RadioConnection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}}
+\subsubsection[{Radio\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}org.\-contikios.\-cooja.\-Radio\-Connection.\-Radio\-Connection (
+\begin{DoxyParamCaption}
+\item[{Radio}]{source\-Radio}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection_adeb449c52aa586de0b34c14b8c6ead39}
+Creates a new radio connection with given source and no destinations.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\-Radio} & Source radio \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a7faeaa8de29ad4f8499540d0a38a0c4b}{\index{org\-::contikios\-::cooja\-::\-Radio\-Connection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}!add\-Destination@{add\-Destination}}
+\index{add\-Destination@{add\-Destination}!org::contikios::cooja::RadioConnection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}}
+\subsubsection[{add\-Destination}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-contikios.\-cooja.\-Radio\-Connection.\-add\-Destination (
+\begin{DoxyParamCaption}
+\item[{Radio}]{radio}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a7faeaa8de29ad4f8499540d0a38a0c4b}
+Add (non-\/interfered) destination radio to connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em radio} & Radio \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a83d1396b6ef027e9c795777deff20d11}{\index{org\-::contikios\-::cooja\-::\-Radio\-Connection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}!add\-Destination@{add\-Destination}}
+\index{add\-Destination@{add\-Destination}!org::contikios::cooja::RadioConnection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}}
+\subsubsection[{add\-Destination}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-contikios.\-cooja.\-Radio\-Connection.\-add\-Destination (
+\begin{DoxyParamCaption}
+\item[{Radio}]{radio, }
+\item[{Long}]{delay}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a83d1396b6ef027e9c795777deff20d11}
+Add (non-\/interfered) destination radio to connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em radio} & Radio \\
+\hline
+{\em delay} & Radio propagation delay (us) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection_acaff68ac6d8f5dc265c2a51e9a7439bc}{\index{org\-::contikios\-::cooja\-::\-Radio\-Connection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}!add\-Interfered@{add\-Interfered}}
+\index{add\-Interfered@{add\-Interfered}!org::contikios::cooja::RadioConnection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}}
+\subsubsection[{add\-Interfered}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-contikios.\-cooja.\-Radio\-Connection.\-add\-Interfered (
+\begin{DoxyParamCaption}
+\item[{Radio}]{radio}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection_acaff68ac6d8f5dc265c2a51e9a7439bc}
+Adds interfered radio to connection. Note that the radio may or may not already be a destination.
+
+
+\begin{DoxyParams}{Parameters}
+{\em radio} & Radio \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_ad58d2f1f7529dfc6fb5fb573c666875a}{get\-Destinations()} 
+
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_abe5029d3e9dfed7d4d83994bf706c2c9}{get\-All\-Destinations()} 
+\end{DoxySeeAlso}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection_abe5029d3e9dfed7d4d83994bf706c2c9}{\index{org\-::contikios\-::cooja\-::\-Radio\-Connection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}!get\-All\-Destinations@{get\-All\-Destinations}}
+\index{get\-All\-Destinations@{get\-All\-Destinations}!org::contikios::cooja::RadioConnection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}}
+\subsubsection[{get\-All\-Destinations}]{\setlength{\rightskip}{0pt plus 5cm}Radio \mbox{[}$\,$\mbox{]} org.\-contikios.\-cooja.\-Radio\-Connection.\-get\-All\-Destinations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection_abe5029d3e9dfed7d4d83994bf706c2c9}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_ad58d2f1f7529dfc6fb5fb573c666875a}{get\-Destinations()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+All destination radios, including radios that became interfered after the connection started. 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection_ac2b68a135d0452a53561609d8c5aa943}{\index{org\-::contikios\-::cooja\-::\-Radio\-Connection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}!get\-Destination\-Delay@{get\-Destination\-Delay}}
+\index{get\-Destination\-Delay@{get\-Destination\-Delay}!org::contikios::cooja::RadioConnection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}}
+\subsubsection[{get\-Destination\-Delay}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-contikios.\-cooja.\-Radio\-Connection.\-get\-Destination\-Delay (
+\begin{DoxyParamCaption}
+\item[{Radio}]{radio}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection_ac2b68a135d0452a53561609d8c5aa943}
+
+\begin{DoxyParams}{Parameters}
+{\em radio} & Radio \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Radio propagation delay (us) 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection_ad58d2f1f7529dfc6fb5fb573c666875a}{\index{org\-::contikios\-::cooja\-::\-Radio\-Connection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}!get\-Destinations@{get\-Destinations}}
+\index{get\-Destinations@{get\-Destinations}!org::contikios::cooja::RadioConnection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}}
+\subsubsection[{get\-Destinations}]{\setlength{\rightskip}{0pt plus 5cm}Radio \mbox{[}$\,$\mbox{]} org.\-contikios.\-cooja.\-Radio\-Connection.\-get\-Destinations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection_ad58d2f1f7529dfc6fb5fb573c666875a}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioConnection_abe5029d3e9dfed7d4d83994bf706c2c9}{get\-All\-Destinations()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+All non-\/interfered destinations 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a51a86f77fa9cea56aa1333c71bd7b20a}{\index{org\-::contikios\-::cooja\-::\-Radio\-Connection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}!get\-Interfered@{get\-Interfered}}
+\index{get\-Interfered@{get\-Interfered}!org::contikios::cooja::RadioConnection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}}
+\subsubsection[{get\-Interfered}]{\setlength{\rightskip}{0pt plus 5cm}Radio \mbox{[}$\,$\mbox{]} org.\-contikios.\-cooja.\-Radio\-Connection.\-get\-Interfered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a51a86f77fa9cea56aa1333c71bd7b20a}
+\begin{DoxyReturn}{Returns}
+All radios interfered by this connection, including destinations 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection_af2bd3c40fa297d883ccb1d2285b0edd1}{\index{org\-::contikios\-::cooja\-::\-Radio\-Connection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}!get\-Reception\-Start\-Time@{get\-Reception\-Start\-Time}}
+\index{get\-Reception\-Start\-Time@{get\-Reception\-Start\-Time}!org::contikios::cooja::RadioConnection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}}
+\subsubsection[{get\-Reception\-Start\-Time}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-contikios.\-cooja.\-Radio\-Connection.\-get\-Reception\-Start\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection_af2bd3c40fa297d883ccb1d2285b0edd1}
+\begin{DoxyReturn}{Returns}
+Start time of ongoing reception 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection_aa360f2c130d032769b2d78c895041c71}{\index{org\-::contikios\-::cooja\-::\-Radio\-Connection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}!get\-Source@{get\-Source}}
+\index{get\-Source@{get\-Source}!org::contikios::cooja::RadioConnection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}}
+\subsubsection[{get\-Source}]{\setlength{\rightskip}{0pt plus 5cm}Radio org.\-contikios.\-cooja.\-Radio\-Connection.\-get\-Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection_aa360f2c130d032769b2d78c895041c71}
+\begin{DoxyReturn}{Returns}
+Source radio 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection_ab334a3820d0405a0b2b6aa7683561149}{\index{org\-::contikios\-::cooja\-::\-Radio\-Connection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}!get\-Start\-Time@{get\-Start\-Time}}
+\index{get\-Start\-Time@{get\-Start\-Time}!org::contikios::cooja::RadioConnection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}}
+\subsubsection[{get\-Start\-Time}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-contikios.\-cooja.\-Radio\-Connection.\-get\-Start\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection_ab334a3820d0405a0b2b6aa7683561149}
+\begin{DoxyReturn}{Returns}
+Radio connection start time 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection_aea0b41548059472407b9c33fa62734ea}{\index{org\-::contikios\-::cooja\-::\-Radio\-Connection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}!is\-Destination@{is\-Destination}}
+\index{is\-Destination@{is\-Destination}!org::contikios::cooja::RadioConnection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}}
+\subsubsection[{is\-Destination}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-contikios.\-cooja.\-Radio\-Connection.\-is\-Destination (
+\begin{DoxyParamCaption}
+\item[{Radio}]{radio}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection_aea0b41548059472407b9c33fa62734ea}
+
+\begin{DoxyParams}{Parameters}
+{\em radio} & Radio \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if radio is a non-\/interfered destination in this connection 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a4a0dfb86d28970240ddd53132c24d300}{\index{org\-::contikios\-::cooja\-::\-Radio\-Connection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}!is\-Interfered@{is\-Interfered}}
+\index{is\-Interfered@{is\-Interfered}!org::contikios::cooja::RadioConnection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}}
+\subsubsection[{is\-Interfered}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-contikios.\-cooja.\-Radio\-Connection.\-is\-Interfered (
+\begin{DoxyParamCaption}
+\item[{Radio}]{radio}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a4a0dfb86d28970240ddd53132c24d300}
+
+\begin{DoxyParams}{Parameters}
+{\em radio} & Radio \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if radio is interfered in this connection 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a988eb4ce5c7a4fcac7a535134c11d2a8}{\index{org\-::contikios\-::cooja\-::\-Radio\-Connection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}!remove\-Destination@{remove\-Destination}}
+\index{remove\-Destination@{remove\-Destination}!org::contikios::cooja::RadioConnection@{org\-::contikios\-::cooja\-::\-Radio\-Connection}}
+\subsubsection[{remove\-Destination}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-contikios.\-cooja.\-Radio\-Connection.\-remove\-Destination (
+\begin{DoxyParamCaption}
+\item[{Radio}]{radio}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1RadioConnection_a988eb4ce5c7a4fcac7a535134c11d2a8}
+Experimental\-: remove destination.
+
+
+\begin{DoxyParams}{Parameters}
+{\em radio} & Radio \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Radio\-Connection.\-java\end{DoxyCompactItemize}
