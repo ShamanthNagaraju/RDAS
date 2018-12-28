@@ -1,0 +1,172 @@
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Mote}{\section{org.\-contikios.\-cooja.\-Mote Interface Reference}
+\label{interfaceorg_1_1contikios_1_1cooja_1_1Mote}\index{org.\-contikios.\-cooja.\-Mote@{org.\-contikios.\-cooja.\-Mote}}
+}
+Inheritance diagram for org.\-contikios.\-cooja.\-Mote\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceorg_1_1contikios_1_1cooja_1_1Mote}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote_ace9d66ac50f3dba7ae725a16a8172aa6}{get\-I\-D} ()
+\item 
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler}{Mote\-Interface\-Handler} \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote_a37bc264ef32cdd78b2b126d83e7a42d4}{get\-Interfaces} ()
+\item 
+Memory\-Interface \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote_a239aebd679450f6face2073f0599a13f}{get\-Memory} ()
+\item 
+\hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1MoteType}{Mote\-Type} \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote_ab8120b25191f1101e79f1986ac90639c}{get\-Type} ()
+\item 
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1Simulation}{Simulation} \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote_abda92c72b3264208f6d3c1deb7cc6a6e}{get\-Simulation} ()
+\item 
+abstract Collection$<$ Element $>$ \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote_a588f56dddb96a6f996ebe99264e4cba3}{get\-Config\-X\-M\-L} ()
+\item 
+abstract boolean \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote_afd2320eec3cd8dc02f80286b40f1ad3a}{set\-Config\-X\-M\-L} (\hyperlink{classorg_1_1contikios_1_1cooja_1_1Simulation}{Simulation} simulation, Collection$<$ Element $>$ config\-X\-M\-L, boolean vis\-Available)
+\item 
+void \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote_a03fcd439ae5bec154da6146925971f28}{removed} ()
+\item 
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Mote_ad8d19948b08e53093123aff13c3e4e49}{void {\bfseries set\-Property} (String key, Object obj)}\label{interfaceorg_1_1contikios_1_1cooja_1_1Mote_ad8d19948b08e53093123aff13c3e4e49}
+
+\item 
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Mote_a28c82cca6413b812bc8e815a30f8041d}{Object {\bfseries get\-Property} (String key)}\label{interfaceorg_1_1contikios_1_1cooja_1_1Mote_a28c82cca6413b812bc8e815a30f8041d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simulated mote.
+
+All motes have an interface handler, a mote type and a mote memory.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler}{org.\-contikios.\-cooja.\-Mote\-Interface\-Handler} 
+
+org.\-contikios.\-cooja.\-Mote\-Memory 
+
+\hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1MoteType}{org.\-contikios.\-cooja.\-Mote\-Type}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Fredrik Osterlind 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Mote_a588f56dddb96a6f996ebe99264e4cba3}{\index{org\-::contikios\-::cooja\-::\-Mote@{org\-::contikios\-::cooja\-::\-Mote}!get\-Config\-X\-M\-L@{get\-Config\-X\-M\-L}}
+\index{get\-Config\-X\-M\-L@{get\-Config\-X\-M\-L}!org::contikios::cooja::Mote@{org\-::contikios\-::cooja\-::\-Mote}}
+\subsubsection[{get\-Config\-X\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}abstract Collection$<$Element$>$ org.\-contikios.\-cooja.\-Mote.\-get\-Config\-X\-M\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{interfaceorg_1_1contikios_1_1cooja_1_1Mote_a588f56dddb96a6f996ebe99264e4cba3}
+Returns X\-M\-L elements representing the current config of this mote. This is fetched by the simulator for example when saving a simulation configuration file. For example a mote may return the configs of all its interfaces. This method should however not return state specific information. (All nodes are restarted when loading a simulation.)
+
+\begin{DoxySeeAlso}{See Also}
+\#set\-Config\-X\-M\-L(\-Simulation, Collection, boolean) 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+X\-M\-L elements representing the current mote config 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Mote_ace9d66ac50f3dba7ae725a16a8172aa6}{\index{org\-::contikios\-::cooja\-::\-Mote@{org\-::contikios\-::cooja\-::\-Mote}!get\-I\-D@{get\-I\-D}}
+\index{get\-I\-D@{get\-I\-D}!org::contikios::cooja::Mote@{org\-::contikios\-::cooja\-::\-Mote}}
+\subsubsection[{get\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-contikios.\-cooja.\-Mote.\-get\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1contikios_1_1cooja_1_1Mote_ace9d66ac50f3dba7ae725a16a8172aa6}
+\begin{DoxyReturn}{Returns}
+Unique mote I\-D 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Mote_a37bc264ef32cdd78b2b126d83e7a42d4}{\index{org\-::contikios\-::cooja\-::\-Mote@{org\-::contikios\-::cooja\-::\-Mote}!get\-Interfaces@{get\-Interfaces}}
+\index{get\-Interfaces@{get\-Interfaces}!org::contikios::cooja::Mote@{org\-::contikios\-::cooja\-::\-Mote}}
+\subsubsection[{get\-Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mote\-Interface\-Handler} org.\-contikios.\-cooja.\-Mote.\-get\-Interfaces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1contikios_1_1cooja_1_1Mote_a37bc264ef32cdd78b2b126d83e7a42d4}
+Returns the interface handler of this mote.
+
+\begin{DoxySeeAlso}{See Also}
+\#set\-Interfaces(\-Mote\-Interface\-Handler) 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+\hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote}{Mote} interface handler 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Mote_a239aebd679450f6face2073f0599a13f}{\index{org\-::contikios\-::cooja\-::\-Mote@{org\-::contikios\-::cooja\-::\-Mote}!get\-Memory@{get\-Memory}}
+\index{get\-Memory@{get\-Memory}!org::contikios::cooja::Mote@{org\-::contikios\-::cooja\-::\-Mote}}
+\subsubsection[{get\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}Memory\-Interface org.\-contikios.\-cooja.\-Mote.\-get\-Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1contikios_1_1cooja_1_1Mote_a239aebd679450f6face2073f0599a13f}
+Returns the memory of this mote.
+
+\begin{DoxySeeAlso}{See Also}
+\#set\-Memory(\-Mote\-Memory) 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+\hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote}{Mote} memory 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Mote_abda92c72b3264208f6d3c1deb7cc6a6e}{\index{org\-::contikios\-::cooja\-::\-Mote@{org\-::contikios\-::cooja\-::\-Mote}!get\-Simulation@{get\-Simulation}}
+\index{get\-Simulation@{get\-Simulation}!org::contikios::cooja::Mote@{org\-::contikios\-::cooja\-::\-Mote}}
+\subsubsection[{get\-Simulation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Simulation} org.\-contikios.\-cooja.\-Mote.\-get\-Simulation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1contikios_1_1cooja_1_1Mote_abda92c72b3264208f6d3c1deb7cc6a6e}
+Returns simulation which holds this mote.
+
+\begin{DoxySeeAlso}{See Also}
+\#set\-Simulation(\-Simulation) 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1Simulation}{Simulation} 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Mote_ab8120b25191f1101e79f1986ac90639c}{\index{org\-::contikios\-::cooja\-::\-Mote@{org\-::contikios\-::cooja\-::\-Mote}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!org::contikios::cooja::Mote@{org\-::contikios\-::cooja\-::\-Mote}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mote\-Type} org.\-contikios.\-cooja.\-Mote.\-get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1contikios_1_1cooja_1_1Mote_ab8120b25191f1101e79f1986ac90639c}
+Returns mote type.
+
+\begin{DoxySeeAlso}{See Also}
+\#set\-Type(\-Mote\-Type) 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+\hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote}{Mote} type 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Mote_a03fcd439ae5bec154da6146925971f28}{\index{org\-::contikios\-::cooja\-::\-Mote@{org\-::contikios\-::cooja\-::\-Mote}!removed@{removed}}
+\index{removed@{removed}!org::contikios::cooja::Mote@{org\-::contikios\-::cooja\-::\-Mote}}
+\subsubsection[{removed}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-contikios.\-cooja.\-Mote.\-removed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1contikios_1_1cooja_1_1Mote_a03fcd439ae5bec154da6146925971f28}
+Called when mote is removed from simulation \hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Mote_afd2320eec3cd8dc02f80286b40f1ad3a}{\index{org\-::contikios\-::cooja\-::\-Mote@{org\-::contikios\-::cooja\-::\-Mote}!set\-Config\-X\-M\-L@{set\-Config\-X\-M\-L}}
+\index{set\-Config\-X\-M\-L@{set\-Config\-X\-M\-L}!org::contikios::cooja::Mote@{org\-::contikios\-::cooja\-::\-Mote}}
+\subsubsection[{set\-Config\-X\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}abstract boolean org.\-contikios.\-cooja.\-Mote.\-set\-Config\-X\-M\-L (
+\begin{DoxyParamCaption}
+\item[{{\bf Simulation}}]{simulation, }
+\item[{Collection$<$ Element $>$}]{config\-X\-M\-L, }
+\item[{boolean}]{vis\-Available}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{interfaceorg_1_1contikios_1_1cooja_1_1Mote_afd2320eec3cd8dc02f80286b40f1ad3a}
+Sets the current mote config depending on the given X\-M\-L elements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em simulation} & \hyperlink{classorg_1_1contikios_1_1cooja_1_1Simulation}{Simulation} holding this mote \\
+\hline
+{\em config\-X\-M\-L} & Config X\-M\-L elements\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote_a588f56dddb96a6f996ebe99264e4cba3}{get\-Config\-X\-M\-L()} 
+\end{DoxySeeAlso}
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Mote.\-java\end{DoxyCompactItemize}

@@ -1,0 +1,129 @@
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Plugin}{\section{org.\-contikios.\-cooja.\-Plugin Interface Reference}
+\label{interfaceorg_1_1contikios_1_1cooja_1_1Plugin}\index{org.\-contikios.\-cooja.\-Plugin@{org.\-contikios.\-cooja.\-Plugin}}
+}
+Inheritance diagram for org.\-contikios.\-cooja.\-Plugin\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceorg_1_1contikios_1_1cooja_1_1Plugin}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+J\-Internal\-Frame \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_ae19ca3da5d492cfc80836f304f71b32a}{get\-Cooja} ()
+\item 
+void \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_aae8a585e3a659cc585859a5728a42d15}{start\-Plugin} ()
+\item 
+void \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_a87f92ae1a613ed6f3665a953ab748430}{close\-Plugin} ()
+\item 
+Collection$<$ Element $>$ \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_acf14af975741b1de50749b358cd671a7}{get\-Config\-X\-M\-L} ()
+\item 
+boolean \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_a1a7b2031b097da13170429ce7f9dc39e}{set\-Config\-X\-M\-L} (Collection$<$ Element $>$ config\-X\-M\-L, boolean vis\-Available)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\-O\-O\-J\-A plugin. For graphical plugins, extend abstract class \hyperlink{classorg_1_1contikios_1_1cooja_1_1VisPlugin}{Vis\-Plugin}. A plugin should also use Class\-Decription and \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1PluginType}{Plugin\-Type}.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1ClassDescription}{org.\-contikios.\-cooja.\-Class\-Description} 
+
+\hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1PluginType}{org.\-contikios.\-cooja.\-Plugin\-Type} 
+
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1VisPlugin}{org.\-contikios.\-cooja.\-Vis\-Plugin}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Fredrik Osterlind 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_a87f92ae1a613ed6f3665a953ab748430}{\index{org\-::contikios\-::cooja\-::\-Plugin@{org\-::contikios\-::cooja\-::\-Plugin}!close\-Plugin@{close\-Plugin}}
+\index{close\-Plugin@{close\-Plugin}!org::contikios::cooja::Plugin@{org\-::contikios\-::cooja\-::\-Plugin}}
+\subsubsection[{close\-Plugin}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-contikios.\-cooja.\-Plugin.\-close\-Plugin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_a87f92ae1a613ed6f3665a953ab748430}
+This method is called when an opened plugin is about to close. It should release any resources such as registered observers or opened interface visualizers. 
+
+Implemented in \hyperlink{classorg_1_1contikios_1_1cooja_1_1VisPlugin_ab010d744bcc4f590f7edd2e32e5f758d}{org.\-contikios.\-cooja.\-Vis\-Plugin}.
+
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_acf14af975741b1de50749b358cd671a7}{\index{org\-::contikios\-::cooja\-::\-Plugin@{org\-::contikios\-::cooja\-::\-Plugin}!get\-Config\-X\-M\-L@{get\-Config\-X\-M\-L}}
+\index{get\-Config\-X\-M\-L@{get\-Config\-X\-M\-L}!org::contikios::cooja::Plugin@{org\-::contikios\-::cooja\-::\-Plugin}}
+\subsubsection[{get\-Config\-X\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}Collection$<$Element$>$ org.\-contikios.\-cooja.\-Plugin.\-get\-Config\-X\-M\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_acf14af975741b1de50749b358cd671a7}
+Returns X\-M\-L elements representing the current config of this plugin. This is fetched by the simulator for example when saving a simulation configuration file. For example a plugin may return the current size and position. This method should however not return state specific information such as the value of a mote L\-E\-D, or total number of motes. (All nodes are restarted when loading a simulation.)
+
+\begin{DoxySeeAlso}{See Also}
+\#set\-Config\-X\-M\-L(\-Collection, boolean) 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+X\-M\-L elements representing the current radio medium config 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1contikios_1_1cooja_1_1VisPlugin_a2c15dd2d95364a708dde19b7b54fa974}{org.\-contikios.\-cooja.\-Vis\-Plugin}.
+
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_ae19ca3da5d492cfc80836f304f71b32a}{\index{org\-::contikios\-::cooja\-::\-Plugin@{org\-::contikios\-::cooja\-::\-Plugin}!get\-Cooja@{get\-Cooja}}
+\index{get\-Cooja@{get\-Cooja}!org::contikios::cooja::Plugin@{org\-::contikios\-::cooja\-::\-Plugin}}
+\subsubsection[{get\-Cooja}]{\setlength{\rightskip}{0pt plus 5cm}J\-Internal\-Frame org.\-contikios.\-cooja.\-Plugin.\-get\-Cooja (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_ae19ca3da5d492cfc80836f304f71b32a}
+Graphical component of plugin (if any) 
+
+Implemented in \hyperlink{classorg_1_1contikios_1_1cooja_1_1VisPlugin_a4c73dd97f27405a0804a2473d3e75e35}{org.\-contikios.\-cooja.\-Vis\-Plugin}.
+
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_a1a7b2031b097da13170429ce7f9dc39e}{\index{org\-::contikios\-::cooja\-::\-Plugin@{org\-::contikios\-::cooja\-::\-Plugin}!set\-Config\-X\-M\-L@{set\-Config\-X\-M\-L}}
+\index{set\-Config\-X\-M\-L@{set\-Config\-X\-M\-L}!org::contikios::cooja::Plugin@{org\-::contikios\-::cooja\-::\-Plugin}}
+\subsubsection[{set\-Config\-X\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-contikios.\-cooja.\-Plugin.\-set\-Config\-X\-M\-L (
+\begin{DoxyParamCaption}
+\item[{Collection$<$ Element $>$}]{config\-X\-M\-L, }
+\item[{boolean}]{vis\-Available}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_a1a7b2031b097da13170429ce7f9dc39e}
+Sets the current plugin config depending on the given X\-M\-L elements.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_acf14af975741b1de50749b358cd671a7}{get\-Config\-X\-M\-L()} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em config\-X\-M\-L} & Config X\-M\-L elements \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if config was set successfully, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1contikios_1_1cooja_1_1VisPlugin_ad709d713ee9528c843400984ae183c6f}{org.\-contikios.\-cooja.\-Vis\-Plugin}.
+
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_aae8a585e3a659cc585859a5728a42d15}{\index{org\-::contikios\-::cooja\-::\-Plugin@{org\-::contikios\-::cooja\-::\-Plugin}!start\-Plugin@{start\-Plugin}}
+\index{start\-Plugin@{start\-Plugin}!org::contikios::cooja::Plugin@{org\-::contikios\-::cooja\-::\-Plugin}}
+\subsubsection[{start\-Plugin}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-contikios.\-cooja.\-Plugin.\-start\-Plugin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_aae8a585e3a659cc585859a5728a42d15}
+This method is called to activate a new plugin, after constructing it. If a simulation is loaded, this method is called after \hyperlink{}{set\-Config\-X\-M\-L(\-Collection, boolean)}.
+
+\begin{DoxySeeAlso}{See Also}
+\#set\-Config\-X\-M\-L(\-Collection, boolean) 
+
+\hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Plugin_a87f92ae1a613ed6f3665a953ab748430}{close\-Plugin()} 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classorg_1_1contikios_1_1cooja_1_1VisPlugin_a34e1bee73bd2b86e39bb267f450e624f}{org.\-contikios.\-cooja.\-Vis\-Plugin}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Plugin.\-java\end{DoxyCompactItemize}

@@ -1,0 +1,325 @@
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler}{\section{org.\-contikios.\-cooja.\-Mote\-Interface\-Handler Class Reference}
+\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler}\index{org.\-contikios.\-cooja.\-Mote\-Interface\-Handler@{org.\-contikios.\-cooja.\-Mote\-Interface\-Handler}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a72f60f99130084750b9c51e4b09a3083}{Mote\-Interface\-Handler} ()
+\item 
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a2b5420f067a850e988da6d53d253b5e5}{Mote\-Interface\-Handler} (\hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote}{Mote} mote, Class$<$?extends \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterface}{Mote\-Interface} $>$\mbox{[}$\,$\mbox{]} interface\-Classes)
+\item 
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterface}{Mote\-Interface} \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a1bbbab6a19d416c59087bb78951628b3}{get} (String classname)
+\item 
+Battery \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_ad1b97d695565157c9f9145bd585ab0f2}{get\-Battery} ()
+\item 
+Beeper \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a4331cc7577b2e09fd87e00ca6a1fc844}{get\-Beeper} ()
+\item 
+Button \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_aa686e64d9f84f1b4906eea500c6798f4}{get\-Button} ()
+\item 
+Clock \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a668496b5a39f228fb2a17329677b2b13}{get\-Clock} ()
+\item 
+I\-P\-Address \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a9cfdbcabb9bd1b483c0c6b7ee39a64eb}{get\-I\-P\-Address} ()
+\item 
+Rime\-Address \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a8166f98272f183e940467c36de5b6a74}{get\-Rime\-Address} ()
+\item 
+L\-E\-D \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_af9047c7f930b323a2bbd50beffe765f6}{get\-L\-E\-D} ()
+\item 
+Log \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a276edc9b54ed8549fd87b9f277118425}{get\-Log} ()
+\item 
+Mote\-I\-D \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a56e8ce372387424d3b76028e1bbc57c1}{get\-Mote\-I\-D} ()
+\item 
+P\-I\-R \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_acde7bd2213e31bb044ebabe2dba27b16}{get\-P\-I\-R} ()
+\item 
+Position \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_af6f171cc7e1fabb767f01ed70b8abaa9}{get\-Position} ()
+\item 
+Radio \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_ab92cd221205b88b9f4ff34af051e5a8b}{get\-Radio} ()
+\item 
+void \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_adb6e3304cc2a03769f61d3c51d84a439}{do\-Active\-Actions\-Before\-Tick} ()
+\item 
+void \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a40a6028e66b1d569b08290a0784aabe4}{do\-Active\-Actions\-After\-Tick} ()
+\item 
+void \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a13aaf685033814db9359c920e74261f0}{do\-Passive\-Actions\-Before\-Tick} ()
+\item 
+void \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a665063232706a8ca1fd7d9c1f00861b5}{do\-Passive\-Actions\-After\-Tick} ()
+\item 
+Collection$<$ \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterface}{Mote\-Interface} $>$ \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a1b3ea0eadba6762d997dfb6468c2e209}{get\-Interfaces} ()
+\item 
+void \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_abca4b46a75c6d9f166bd12fa56a4a095}{add\-Interface} (\hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterface}{Mote\-Interface} intf)
+\item 
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a710acc6a3d3077e61f9b3b3c467d49d2}{String {\bfseries to\-String} ()}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a710acc6a3d3077e61f9b3b3c467d49d2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The mote interface handler holds all interfaces for a specific mote. Interfaces should be polled via this class when the mote is ticked.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a40a6028e66b1d569b08290a0784aabe4}{do\-Active\-Actions\-After\-Tick()} 
+
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_adb6e3304cc2a03769f61d3c51d84a439}{do\-Active\-Actions\-Before\-Tick()} 
+
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a665063232706a8ca1fd7d9c1f00861b5}{do\-Passive\-Actions\-After\-Tick()} 
+
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a13aaf685033814db9359c920e74261f0}{do\-Passive\-Actions\-Before\-Tick()}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Fredrik Osterlind 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a72f60f99130084750b9c51e4b09a3083}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!Mote\-Interface\-Handler@{Mote\-Interface\-Handler}}
+\index{Mote\-Interface\-Handler@{Mote\-Interface\-Handler}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{Mote\-Interface\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-Mote\-Interface\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a72f60f99130084750b9c51e4b09a3083}
+Creates new empty mote interface handler. \hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a2b5420f067a850e988da6d53d253b5e5}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!Mote\-Interface\-Handler@{Mote\-Interface\-Handler}}
+\index{Mote\-Interface\-Handler@{Mote\-Interface\-Handler}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{Mote\-Interface\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-Mote\-Interface\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Mote}}]{mote, }
+\item[{Class$<$?extends {\bf Mote\-Interface} $>$\mbox{[}$\,$\mbox{]}}]{interface\-Classes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a2b5420f067a850e988da6d53d253b5e5}
+Creates new mote interface handler. All given interfaces are created.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mote} & \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote}{Mote} \\
+\hline
+{\em interface\-Classes} & \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote}{Mote} interface classes \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_abca4b46a75c6d9f166bd12fa56a4a095}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!add\-Interface@{add\-Interface}}
+\index{add\-Interface@{add\-Interface}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{add\-Interface}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-add\-Interface (
+\begin{DoxyParamCaption}
+\item[{{\bf Mote\-Interface}}]{intf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_abca4b46a75c6d9f166bd12fa56a4a095}
+Add mote interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em intf} & \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote}{Mote} interface \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+Polled\-Before\-Active\-Ticks 
+
+Polled\-Before\-All\-Ticks 
+
+Polled\-After\-Active\-Ticks 
+
+Polled\-After\-All\-Ticks 
+\end{DoxySeeAlso}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a40a6028e66b1d569b08290a0784aabe4}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!do\-Active\-Actions\-After\-Tick@{do\-Active\-Actions\-After\-Tick}}
+\index{do\-Active\-Actions\-After\-Tick@{do\-Active\-Actions\-After\-Tick}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{do\-Active\-Actions\-After\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-do\-Active\-Actions\-After\-Tick (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a40a6028e66b1d569b08290a0784aabe4}
+Polls active interfaces after mote tick. \hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_adb6e3304cc2a03769f61d3c51d84a439}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!do\-Active\-Actions\-Before\-Tick@{do\-Active\-Actions\-Before\-Tick}}
+\index{do\-Active\-Actions\-Before\-Tick@{do\-Active\-Actions\-Before\-Tick}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{do\-Active\-Actions\-Before\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-do\-Active\-Actions\-Before\-Tick (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_adb6e3304cc2a03769f61d3c51d84a439}
+Polls active interfaces before mote tick. \hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a665063232706a8ca1fd7d9c1f00861b5}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!do\-Passive\-Actions\-After\-Tick@{do\-Passive\-Actions\-After\-Tick}}
+\index{do\-Passive\-Actions\-After\-Tick@{do\-Passive\-Actions\-After\-Tick}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{do\-Passive\-Actions\-After\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-do\-Passive\-Actions\-After\-Tick (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a665063232706a8ca1fd7d9c1f00861b5}
+Polls passive interfaces after mote tick. \hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a13aaf685033814db9359c920e74261f0}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!do\-Passive\-Actions\-Before\-Tick@{do\-Passive\-Actions\-Before\-Tick}}
+\index{do\-Passive\-Actions\-Before\-Tick@{do\-Passive\-Actions\-Before\-Tick}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{do\-Passive\-Actions\-Before\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-do\-Passive\-Actions\-Before\-Tick (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a13aaf685033814db9359c920e74261f0}
+Polls passive interfaces before mote tick. \hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a1bbbab6a19d416c59087bb78951628b3}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!get@{get}}
+\index{get@{get}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mote\-Interface} org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-get (
+\begin{DoxyParamCaption}
+\item[{String}]{classname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a1bbbab6a19d416c59087bb78951628b3}
+Returns the first interface with a class name that ends with the given arguments. Example\-: mote.\-get\-Interfaces().get(\char`\"{}\-Temperature\char`\"{});
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\-N$>$} & \\
+\hline
+{\em classname} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_ad1b97d695565157c9f9145bd585ab0f2}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!get\-Battery@{get\-Battery}}
+\index{get\-Battery@{get\-Battery}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{get\-Battery}]{\setlength{\rightskip}{0pt plus 5cm}Battery org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-get\-Battery (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_ad1b97d695565157c9f9145bd585ab0f2}
+Returns the battery interface (if any).
+
+\begin{DoxyReturn}{Returns}
+Battery interface 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a4331cc7577b2e09fd87e00ca6a1fc844}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!get\-Beeper@{get\-Beeper}}
+\index{get\-Beeper@{get\-Beeper}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{get\-Beeper}]{\setlength{\rightskip}{0pt plus 5cm}Beeper org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-get\-Beeper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a4331cc7577b2e09fd87e00ca6a1fc844}
+Returns the beeper interface (if any).
+
+\begin{DoxyReturn}{Returns}
+Beeper interface 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_aa686e64d9f84f1b4906eea500c6798f4}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!get\-Button@{get\-Button}}
+\index{get\-Button@{get\-Button}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{get\-Button}]{\setlength{\rightskip}{0pt plus 5cm}Button org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-get\-Button (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_aa686e64d9f84f1b4906eea500c6798f4}
+Returns the button interface (if any).
+
+\begin{DoxyReturn}{Returns}
+Button interface 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a668496b5a39f228fb2a17329677b2b13}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!get\-Clock@{get\-Clock}}
+\index{get\-Clock@{get\-Clock}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{get\-Clock}]{\setlength{\rightskip}{0pt plus 5cm}Clock org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-get\-Clock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a668496b5a39f228fb2a17329677b2b13}
+Returns the clock interface (if any).
+
+\begin{DoxyReturn}{Returns}
+Clock interface 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a1b3ea0eadba6762d997dfb6468c2e209}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!get\-Interfaces@{get\-Interfaces}}
+\index{get\-Interfaces@{get\-Interfaces}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{get\-Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}Collection$<${\bf Mote\-Interface}$>$ org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-get\-Interfaces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a1b3ea0eadba6762d997dfb6468c2e209}
+\begin{DoxyReturn}{Returns}
+\hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote}{Mote} interfaces 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a9cfdbcabb9bd1b483c0c6b7ee39a64eb}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!get\-I\-P\-Address@{get\-I\-P\-Address}}
+\index{get\-I\-P\-Address@{get\-I\-P\-Address}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{get\-I\-P\-Address}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-Address org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-get\-I\-P\-Address (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a9cfdbcabb9bd1b483c0c6b7ee39a64eb}
+Returns the I\-P address interface (if any).
+
+\begin{DoxyReturn}{Returns}
+I\-P Address interface 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_af9047c7f930b323a2bbd50beffe765f6}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!get\-L\-E\-D@{get\-L\-E\-D}}
+\index{get\-L\-E\-D@{get\-L\-E\-D}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{get\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}L\-E\-D org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-get\-L\-E\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_af9047c7f930b323a2bbd50beffe765f6}
+Returns the L\-E\-D interface (if any).
+
+\begin{DoxyReturn}{Returns}
+L\-E\-D interface 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a276edc9b54ed8549fd87b9f277118425}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!get\-Log@{get\-Log}}
+\index{get\-Log@{get\-Log}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{get\-Log}]{\setlength{\rightskip}{0pt plus 5cm}Log org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-get\-Log (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a276edc9b54ed8549fd87b9f277118425}
+Returns the log interface (if any).
+
+\begin{DoxyReturn}{Returns}
+Log interface 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a56e8ce372387424d3b76028e1bbc57c1}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!get\-Mote\-I\-D@{get\-Mote\-I\-D}}
+\index{get\-Mote\-I\-D@{get\-Mote\-I\-D}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{get\-Mote\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}Mote\-I\-D org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-get\-Mote\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a56e8ce372387424d3b76028e1bbc57c1}
+Returns the mote I\-D interface (if any).
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote}{Mote} I\-D interface 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_acde7bd2213e31bb044ebabe2dba27b16}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!get\-P\-I\-R@{get\-P\-I\-R}}
+\index{get\-P\-I\-R@{get\-P\-I\-R}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{get\-P\-I\-R}]{\setlength{\rightskip}{0pt plus 5cm}P\-I\-R org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-get\-P\-I\-R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_acde7bd2213e31bb044ebabe2dba27b16}
+Returns the P\-I\-R interface (if any).
+
+\begin{DoxyReturn}{Returns}
+P\-I\-R interface 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_af6f171cc7e1fabb767f01ed70b8abaa9}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!get\-Position@{get\-Position}}
+\index{get\-Position@{get\-Position}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{get\-Position}]{\setlength{\rightskip}{0pt plus 5cm}Position org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-get\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_af6f171cc7e1fabb767f01ed70b8abaa9}
+Returns the position interface (if any).
+
+\begin{DoxyReturn}{Returns}
+Position interface 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_ab92cd221205b88b9f4ff34af051e5a8b}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!get\-Radio@{get\-Radio}}
+\index{get\-Radio@{get\-Radio}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{get\-Radio}]{\setlength{\rightskip}{0pt plus 5cm}Radio org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-get\-Radio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_ab92cd221205b88b9f4ff34af051e5a8b}
+Returns the radio interface (if any).
+
+\begin{DoxyReturn}{Returns}
+Radio interface 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a8166f98272f183e940467c36de5b6a74}{\index{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}!get\-Rime\-Address@{get\-Rime\-Address}}
+\index{get\-Rime\-Address@{get\-Rime\-Address}!org::contikios::cooja::MoteInterfaceHandler@{org\-::contikios\-::cooja\-::\-Mote\-Interface\-Handler}}
+\subsubsection[{get\-Rime\-Address}]{\setlength{\rightskip}{0pt plus 5cm}Rime\-Address org.\-contikios.\-cooja.\-Mote\-Interface\-Handler.\-get\-Rime\-Address (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classorg_1_1contikios_1_1cooja_1_1MoteInterfaceHandler_a8166f98272f183e940467c36de5b6a74}
+\begin{DoxyReturn}{Returns}
+Rime address interface 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Mote\-Interface\-Handler.\-java\end{DoxyCompactItemize}

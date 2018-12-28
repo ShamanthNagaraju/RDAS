@@ -1,0 +1,67 @@
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1SupportedArguments}{\section{org.\-contikios.\-cooja.\-Supported\-Arguments Interface Reference}
+\label{interfaceorg_1_1contikios_1_1cooja_1_1SupportedArguments}\index{org.\-contikios.\-cooja.\-Supported\-Arguments@{org.\-contikios.\-cooja.\-Supported\-Arguments}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Class$<$?extends \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1Mote}{Mote} $>$\mbox{[}$\,$\mbox{]} \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1SupportedArguments_a59f2db1fa7c770594a08404cf503c155}{motes} () default
+\item 
+Class$<$?extends \hyperlink{classorg_1_1contikios_1_1cooja_1_1RadioMedium}{Radio\-Medium} $>$\mbox{[}$\,$\mbox{]} \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1SupportedArguments_a68a7483b2974e2c527ebf82593789764}{radio\-Mediums} () default
+\item 
+Class$<$?extends \hyperlink{classorg_1_1contikios_1_1cooja_1_1MoteInterface}{Mote\-Interface} $>$\mbox{[}$\,$\mbox{]} \hyperlink{interfaceorg_1_1contikios_1_1cooja_1_1SupportedArguments_a59c91543d5d98c7f21ff8a781e146743}{mote\-Interfaces} () default
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+With this annotation, \hyperlink{classorg_1_1contikios_1_1cooja_1_1Cooja}{Cooja} components (e.\-g. mote plugins) can be activated or deactivated depending on the given argument (e.\-g. mote). This may for example be used by a mote plugin that only accepts emulated motes, and that consequently should be hidden in other non-\/emulated motes' plugin menues.
+
+See below code usage examples.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1contikios_1_1cooja_1_1Cooja_a05c932e736bae89b68e5fc74fd6c6648}{Cooja\-::create\-Mote\-Plugins\-Submenu(\-Mote)} 
+
+Visualizer\-::populate\-Skin\-Menu(\-Menu\-Element) 
+
+D\-G\-R\-M\-Visualizer\-Skin
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Fredrik Osterlind 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1SupportedArguments_a59c91543d5d98c7f21ff8a781e146743}{\index{org\-::contikios\-::cooja\-::\-Supported\-Arguments@{org\-::contikios\-::cooja\-::\-Supported\-Arguments}!mote\-Interfaces@{mote\-Interfaces}}
+\index{mote\-Interfaces@{mote\-Interfaces}!org::contikios::cooja::SupportedArguments@{org\-::contikios\-::cooja\-::\-Supported\-Arguments}}
+\subsubsection[{mote\-Interfaces}]{\setlength{\rightskip}{0pt plus 5cm}Class$<$? extends {\bf Mote\-Interface}$>$ \mbox{[}$\,$\mbox{]} org.\-contikios.\-cooja.\-Supported\-Arguments.\-mote\-Interfaces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{interfaceorg_1_1contikios_1_1cooja_1_1SupportedArguments_a59c91543d5d98c7f21ff8a781e146743}
+\begin{DoxyReturn}{Returns}
+List of required mote interfaces. 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1SupportedArguments_a59f2db1fa7c770594a08404cf503c155}{\index{org\-::contikios\-::cooja\-::\-Supported\-Arguments@{org\-::contikios\-::cooja\-::\-Supported\-Arguments}!motes@{motes}}
+\index{motes@{motes}!org::contikios::cooja::SupportedArguments@{org\-::contikios\-::cooja\-::\-Supported\-Arguments}}
+\subsubsection[{motes}]{\setlength{\rightskip}{0pt plus 5cm}Class$<$? extends {\bf Mote}$>$ \mbox{[}$\,$\mbox{]} org.\-contikios.\-cooja.\-Supported\-Arguments.\-motes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{interfaceorg_1_1contikios_1_1cooja_1_1SupportedArguments_a59f2db1fa7c770594a08404cf503c155}
+\begin{DoxyReturn}{Returns}
+List of accepted mote classes. 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1contikios_1_1cooja_1_1SupportedArguments_a68a7483b2974e2c527ebf82593789764}{\index{org\-::contikios\-::cooja\-::\-Supported\-Arguments@{org\-::contikios\-::cooja\-::\-Supported\-Arguments}!radio\-Mediums@{radio\-Mediums}}
+\index{radio\-Mediums@{radio\-Mediums}!org::contikios::cooja::SupportedArguments@{org\-::contikios\-::cooja\-::\-Supported\-Arguments}}
+\subsubsection[{radio\-Mediums}]{\setlength{\rightskip}{0pt plus 5cm}Class$<$? extends {\bf Radio\-Medium}$>$ \mbox{[}$\,$\mbox{]} org.\-contikios.\-cooja.\-Supported\-Arguments.\-radio\-Mediums (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{interfaceorg_1_1contikios_1_1cooja_1_1SupportedArguments_a68a7483b2974e2c527ebf82593789764}
+\begin{DoxyReturn}{Returns}
+List of accepted radio medium classes. 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Supported\-Arguments.\-java\end{DoxyCompactItemize}
