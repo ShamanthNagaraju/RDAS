@@ -1,0 +1,253 @@
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1CoreComm}{\section{org.\-contikios.\-cooja.\-Core\-Comm Class Reference}
+\label{classorg_1_1contikios_1_1cooja_1_1CoreComm}\index{org.\-contikios.\-cooja.\-Core\-Comm@{org.\-contikios.\-cooja.\-Core\-Comm}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm_a6e6496eaaca78e77d975cfb08ebdf27f}{tick} ()
+\item 
+abstract void \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm_a684a56dd50d0c66e4111e385e09970bb}{set\-Reference\-Address} (int addr)
+\item 
+abstract void \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm_ace5ee251afbf614f27a7abe3da248d05}{get\-Memory} (int rel\-Addr, int length, byte\mbox{[}$\,$\mbox{]} mem)
+\item 
+abstract void \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm_a81682a84197a91fe8b54fe80ded9c322}{set\-Memory} (int rel\-Addr, int length, byte\mbox{[}$\,$\mbox{]} mem)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm_a213d377ca212f4d2954218b8dfc2aead}{has\-Library\-Been\-Loaded} ()
+\item 
+static boolean \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm_a45c2faad923d4f33614f6ed4e82a4a36}{has\-Library\-File\-Been\-Loaded} (File library\-File)
+\item 
+static String \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm_a2e2fa7e2f9ffa0c4827f940791680447}{get\-Available\-Class\-Name} ()
+\item 
+static void \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm_a9bf122532833fd5c093649e06950f62d}{generate\-Lib\-Source\-File} (String class\-Name)  throws Mote\-Type\-Creation\-Exception 
+\item 
+static void \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm_af6d4093df45a4bf1d22e82b4ae0a8f76}{compile\-Source\-File} (String class\-Name)  throws Mote\-Type\-Creation\-Exception 
+\item 
+static Class$<$?$>$ \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm_ab9c811edc26e54ef6cb8dfbaa54a01f1}{load\-Class\-File} (String class\-Name)  throws Mote\-Type\-Creation\-Exception 
+\item 
+static \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm}{Core\-Comm} \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm_a14cb8778960244ee77a6c94eb940270e}{create\-Core\-Comm} (String class\-Name, File lib\-File)  throws Mote\-Type\-Creation\-Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm_a50bd0205ea051af5404a2ffd44155899}{init} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The purpose of corecomm's is communicating with a compiled Contiki system using Java Native Interface (J\-N\-I). Each implemented class (named Lib\mbox{[}number\mbox{]}), loads a shared library which belongs to one mote type. The reason for this somewhat strange design is that once loaded, a native library cannot be unloaded in Java (in the current versions available). Therefore if we wish to load several libraries, the names and associated native functions must have unique names. And those names are defined via the calling class in J\-N\-I. For example, the corresponding function for a native tick method in class Lib1 will be named Java\-\_\-org\-\_\-contikios\-\_\-cooja\-\_\-corecomm\-\_\-\-Lib1\-\_\-tick. When creating a new mote type, the main Contiki source file is generated with function names compatible with the next available corecomm class. This also implies that even if a mote type is deleted, a new one cannot be created using the same corecomm class without restarting the J\-V\-M and thus the entire simulation.
+
+Each implemented \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm}{Core\-Comm} class needs read access to the following core variables\-: 
+\begin{DoxyItemize}
+\item reference\-Var 
+\end{DoxyItemize}and the following native functions\-: 
+\begin{DoxyItemize}
+\item \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm_a6e6496eaaca78e77d975cfb08ebdf27f}{tick()} 
+\item \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm_a50bd0205ea051af5404a2ffd44155899}{init()} 
+\item get\-Reference\-Abs\-Addr() 
+\item \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm_ace5ee251afbf614f27a7abe3da248d05}{get\-Memory(int start, int length, byte\mbox{[}$\,$\mbox{]} mem)} 
+\item \hyperlink{classorg_1_1contikios_1_1cooja_1_1CoreComm_a81682a84197a91fe8b54fe80ded9c322}{set\-Memory(int start, int length, byte\mbox{[}$\,$\mbox{]} mem)}
+
+\begin{DoxyAuthor}{Author}
+Fredrik Osterlind 
+\end{DoxyAuthor}
+
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1CoreComm_af6d4093df45a4bf1d22e82b4ae0a8f76}{\index{org\-::contikios\-::cooja\-::\-Core\-Comm@{org\-::contikios\-::cooja\-::\-Core\-Comm}!compile\-Source\-File@{compile\-Source\-File}}
+\index{compile\-Source\-File@{compile\-Source\-File}!org::contikios::cooja::CoreComm@{org\-::contikios\-::cooja\-::\-Core\-Comm}}
+\subsubsection[{compile\-Source\-File}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-contikios.\-cooja.\-Core\-Comm.\-compile\-Source\-File (
+\begin{DoxyParamCaption}
+\item[{String}]{class\-Name}
+\end{DoxyParamCaption}
+) throws Mote\-Type\-Creation\-Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classorg_1_1contikios_1_1cooja_1_1CoreComm_af6d4093df45a4bf1d22e82b4ae0a8f76}
+Compiles Java class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\-Name} & Java class name (without extension) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Mote\-Type\-Creation\-Exception} & If Java class compilation error occurs \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1CoreComm_a14cb8778960244ee77a6c94eb940270e}{\index{org\-::contikios\-::cooja\-::\-Core\-Comm@{org\-::contikios\-::cooja\-::\-Core\-Comm}!create\-Core\-Comm@{create\-Core\-Comm}}
+\index{create\-Core\-Comm@{create\-Core\-Comm}!org::contikios::cooja::CoreComm@{org\-::contikios\-::cooja\-::\-Core\-Comm}}
+\subsubsection[{create\-Core\-Comm}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Core\-Comm} org.\-contikios.\-cooja.\-Core\-Comm.\-create\-Core\-Comm (
+\begin{DoxyParamCaption}
+\item[{String}]{class\-Name, }
+\item[{File}]{lib\-File}
+\end{DoxyParamCaption}
+) throws Mote\-Type\-Creation\-Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classorg_1_1contikios_1_1cooja_1_1CoreComm_a14cb8778960244ee77a6c94eb940270e}
+Create and return an instance of the core communicator identified by class\-Name. This core communicator will load the native library lib\-File.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\-Name} & Class name of core communicator \\
+\hline
+{\em lib\-File} & Native library file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Core Communicator 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1CoreComm_a9bf122532833fd5c093649e06950f62d}{\index{org\-::contikios\-::cooja\-::\-Core\-Comm@{org\-::contikios\-::cooja\-::\-Core\-Comm}!generate\-Lib\-Source\-File@{generate\-Lib\-Source\-File}}
+\index{generate\-Lib\-Source\-File@{generate\-Lib\-Source\-File}!org::contikios::cooja::CoreComm@{org\-::contikios\-::cooja\-::\-Core\-Comm}}
+\subsubsection[{generate\-Lib\-Source\-File}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-contikios.\-cooja.\-Core\-Comm.\-generate\-Lib\-Source\-File (
+\begin{DoxyParamCaption}
+\item[{String}]{class\-Name}
+\end{DoxyParamCaption}
+) throws Mote\-Type\-Creation\-Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classorg_1_1contikios_1_1cooja_1_1CoreComm_a9bf122532833fd5c093649e06950f62d}
+Generates new source file by reading default source template and replacing the class name field.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\-Name} & Java class name (without extension) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Mote\-Type\-Creation\-Exception} & If error occurs \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1CoreComm_a2e2fa7e2f9ffa0c4827f940791680447}{\index{org\-::contikios\-::cooja\-::\-Core\-Comm@{org\-::contikios\-::cooja\-::\-Core\-Comm}!get\-Available\-Class\-Name@{get\-Available\-Class\-Name}}
+\index{get\-Available\-Class\-Name@{get\-Available\-Class\-Name}!org::contikios::cooja::CoreComm@{org\-::contikios\-::cooja\-::\-Core\-Comm}}
+\subsubsection[{get\-Available\-Class\-Name}]{\setlength{\rightskip}{0pt plus 5cm}static String org.\-contikios.\-cooja.\-Core\-Comm.\-get\-Available\-Class\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classorg_1_1contikios_1_1cooja_1_1CoreComm_a2e2fa7e2f9ffa0c4827f940791680447}
+Get the class name of next free core communicator class. If null is returned, no classes are available.
+
+\begin{DoxyReturn}{Returns}
+Class name 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1CoreComm_ace5ee251afbf614f27a7abe3da248d05}{\index{org\-::contikios\-::cooja\-::\-Core\-Comm@{org\-::contikios\-::cooja\-::\-Core\-Comm}!get\-Memory@{get\-Memory}}
+\index{get\-Memory@{get\-Memory}!org::contikios::cooja::CoreComm@{org\-::contikios\-::cooja\-::\-Core\-Comm}}
+\subsubsection[{get\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}abstract void org.\-contikios.\-cooja.\-Core\-Comm.\-get\-Memory (
+\begin{DoxyParamCaption}
+\item[{int}]{rel\-Addr, }
+\item[{int}]{length, }
+\item[{byte\mbox{[}$\,$\mbox{]}}]{mem}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{classorg_1_1contikios_1_1cooja_1_1CoreComm_ace5ee251afbf614f27a7abe3da248d05}
+Fills an byte array with memory segment identified by start and length.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rel\-Addr} & Relative memory start address \\
+\hline
+{\em length} & Length of segment \\
+\hline
+{\em mem} & Array to fill with memory segment \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1CoreComm_a213d377ca212f4d2954218b8dfc2aead}{\index{org\-::contikios\-::cooja\-::\-Core\-Comm@{org\-::contikios\-::cooja\-::\-Core\-Comm}!has\-Library\-Been\-Loaded@{has\-Library\-Been\-Loaded}}
+\index{has\-Library\-Been\-Loaded@{has\-Library\-Been\-Loaded}!org::contikios::cooja::CoreComm@{org\-::contikios\-::cooja\-::\-Core\-Comm}}
+\subsubsection[{has\-Library\-Been\-Loaded}]{\setlength{\rightskip}{0pt plus 5cm}static boolean org.\-contikios.\-cooja.\-Core\-Comm.\-has\-Library\-Been\-Loaded (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classorg_1_1contikios_1_1cooja_1_1CoreComm_a213d377ca212f4d2954218b8dfc2aead}
+Has any library been loaded? Since libraries can't be unloaded the entire simulator may have to be restarted.
+
+\begin{DoxyReturn}{Returns}
+True if any library has been loaded this session 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1CoreComm_a45c2faad923d4f33614f6ed4e82a4a36}{\index{org\-::contikios\-::cooja\-::\-Core\-Comm@{org\-::contikios\-::cooja\-::\-Core\-Comm}!has\-Library\-File\-Been\-Loaded@{has\-Library\-File\-Been\-Loaded}}
+\index{has\-Library\-File\-Been\-Loaded@{has\-Library\-File\-Been\-Loaded}!org::contikios::cooja::CoreComm@{org\-::contikios\-::cooja\-::\-Core\-Comm}}
+\subsubsection[{has\-Library\-File\-Been\-Loaded}]{\setlength{\rightskip}{0pt plus 5cm}static boolean org.\-contikios.\-cooja.\-Core\-Comm.\-has\-Library\-File\-Been\-Loaded (
+\begin{DoxyParamCaption}
+\item[{File}]{library\-File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classorg_1_1contikios_1_1cooja_1_1CoreComm_a45c2faad923d4f33614f6ed4e82a4a36}
+Has given library file already been loaded during this session? A loaded library can be removed, but not unloaded during one session. And a new library file, named the same as an earlier loaded and removed file, can't be loaded either.
+
+
+\begin{DoxyParams}{Parameters}
+{\em library\-File} & Library file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if a library has already been loaded from the given file's filename 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1CoreComm_a50bd0205ea051af5404a2ffd44155899}{\index{org\-::contikios\-::cooja\-::\-Core\-Comm@{org\-::contikios\-::cooja\-::\-Core\-Comm}!init@{init}}
+\index{init@{init}!org::contikios::cooja::CoreComm@{org\-::contikios\-::cooja\-::\-Core\-Comm}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}abstract void org.\-contikios.\-cooja.\-Core\-Comm.\-init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}}\label{classorg_1_1contikios_1_1cooja_1_1CoreComm_a50bd0205ea051af5404a2ffd44155899}
+Initializes a mote by running a startup script in the core. (Should only be run once, at the same time as the library is loaded) \hypertarget{classorg_1_1contikios_1_1cooja_1_1CoreComm_ab9c811edc26e54ef6cb8dfbaa54a01f1}{\index{org\-::contikios\-::cooja\-::\-Core\-Comm@{org\-::contikios\-::cooja\-::\-Core\-Comm}!load\-Class\-File@{load\-Class\-File}}
+\index{load\-Class\-File@{load\-Class\-File}!org::contikios::cooja::CoreComm@{org\-::contikios\-::cooja\-::\-Core\-Comm}}
+\subsubsection[{load\-Class\-File}]{\setlength{\rightskip}{0pt plus 5cm}static Class$<$?$>$ org.\-contikios.\-cooja.\-Core\-Comm.\-load\-Class\-File (
+\begin{DoxyParamCaption}
+\item[{String}]{class\-Name}
+\end{DoxyParamCaption}
+) throws Mote\-Type\-Creation\-Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classorg_1_1contikios_1_1cooja_1_1CoreComm_ab9c811edc26e54ef6cb8dfbaa54a01f1}
+Loads given Java class file from disk.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\-Name} & Java class name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Loaded class 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Mote\-Type\-Creation\-Exception} & If error occurs \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1CoreComm_a81682a84197a91fe8b54fe80ded9c322}{\index{org\-::contikios\-::cooja\-::\-Core\-Comm@{org\-::contikios\-::cooja\-::\-Core\-Comm}!set\-Memory@{set\-Memory}}
+\index{set\-Memory@{set\-Memory}!org::contikios::cooja::CoreComm@{org\-::contikios\-::cooja\-::\-Core\-Comm}}
+\subsubsection[{set\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}abstract void org.\-contikios.\-cooja.\-Core\-Comm.\-set\-Memory (
+\begin{DoxyParamCaption}
+\item[{int}]{rel\-Addr, }
+\item[{int}]{length, }
+\item[{byte\mbox{[}$\,$\mbox{]}}]{mem}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{classorg_1_1contikios_1_1cooja_1_1CoreComm_a81682a84197a91fe8b54fe80ded9c322}
+Overwrites a memory segment identified by start and length.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rel\-Addr} & Relative memory start address \\
+\hline
+{\em length} & Length of segment \\
+\hline
+{\em mem} & New memory segment data \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1CoreComm_a684a56dd50d0c66e4111e385e09970bb}{\index{org\-::contikios\-::cooja\-::\-Core\-Comm@{org\-::contikios\-::cooja\-::\-Core\-Comm}!set\-Reference\-Address@{set\-Reference\-Address}}
+\index{set\-Reference\-Address@{set\-Reference\-Address}!org::contikios::cooja::CoreComm@{org\-::contikios\-::cooja\-::\-Core\-Comm}}
+\subsubsection[{set\-Reference\-Address}]{\setlength{\rightskip}{0pt plus 5cm}abstract void org.\-contikios.\-cooja.\-Core\-Comm.\-set\-Reference\-Address (
+\begin{DoxyParamCaption}
+\item[{int}]{addr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{classorg_1_1contikios_1_1cooja_1_1CoreComm_a684a56dd50d0c66e4111e385e09970bb}
+Sets the relative memory address of the reference variable. Is used by Contiki to map between absolute and relative memory addresses.
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Relative address \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1contikios_1_1cooja_1_1CoreComm_a6e6496eaaca78e77d975cfb08ebdf27f}{\index{org\-::contikios\-::cooja\-::\-Core\-Comm@{org\-::contikios\-::cooja\-::\-Core\-Comm}!tick@{tick}}
+\index{tick@{tick}!org::contikios::cooja::CoreComm@{org\-::contikios\-::cooja\-::\-Core\-Comm}}
+\subsubsection[{tick}]{\setlength{\rightskip}{0pt plus 5cm}abstract void org.\-contikios.\-cooja.\-Core\-Comm.\-tick (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{classorg_1_1contikios_1_1cooja_1_1CoreComm_a6e6496eaaca78e77d975cfb08ebdf27f}
+Ticks a mote once. This should not be used directly, but instead via \hyperlink{}{Contiki\-Mote\-Type\#tick()}. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Core\-Comm.\-java\end{DoxyCompactItemize}

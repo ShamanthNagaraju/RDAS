@@ -1,0 +1,2 @@
+org.contikios.cooja.PLUGINS = + Mobility
+org.contikios.cooja.JARFILES = + mobility.jar
