@@ -5,7 +5,7 @@ The RDAS version works for Instant-contiki-2.7 only which can be downloaded from
 
 Steps for getting started with RDAS:
 1. Start a Cooja simulation
-2. Set the orintation of the node by setting ori_val in the "broadcast_eample.c" file
+2. Set the orintation of the node by setting ori_val in the "broadcast_example.c" file
 3. Right-click any node in the network window
 4. Use the menu options to select Transmission Range and set the transmission range to 134 m and the interference range to 135 m to use default Rectangular Patch Antenna array (RPA) as directional antenna
 5. Run
